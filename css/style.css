@@ -1,0 +1,157 @@
+/* Fonts */
+@font-face {
+	font-family: 'Rubik';
+	font-style: 300;
+	font-display: swap;
+	font-weight: 300;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik@latest/latin-300-normal.woff2) format('woff2');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik@latest/latin-400-normal.woff2) format('woff2');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-style: 500;
+	font-display: swap;
+	font-weight: 500;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik@latest/latin-500-normal.woff2) format('woff2');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+
+/* Colors */
+:root {
+	/* Primary */
+	--blue: hsl(246, 80%, 60%);
+
+	--work-clr: hsl(15, 100%, 70%);
+	--play-clr: hsl(195, 74%, 62%);
+	--study-clr: hsl(348, 100%, 68%);
+	--exercise-clr: hsl(145, 58%, 55%);
+	--social-clr: hsl(264, 64%, 52%);
+	--selfcare-clr: hsl(43, 84%, 65%);
+
+	/* neutral */
+	--very-dark-blue: hsl(226, 43%, 10%);
+	--dark-blue: hsl(235, 46%, 20%);
+	--desaturated-blue: hsl(235, 45%, 61%);
+	--pale-blue: hsl(236, 100%, 87%);
+}
+
+/* bg & fg colors */
+.card-bg {
+	background-color: var(--dark-blue);
+}
+.bg-primary {
+	background-color: var(--blue) !important;
+}
+.bg-work {
+	background-color: var(--work-clr);
+}
+.bg-play {
+	background-color: var(--play-clr);
+}
+.bg-study {
+	background-color: var(--study-clr);
+}
+.bg-exercice {
+	background-color: var(--exercise-clr);
+}
+.bg-social {
+	background-color: var(--social-clr);
+}
+.bg-selfcare {
+	background-color: var(--selfcare-clr);
+}
+.text-secondary {
+	color: var(--pale-blue) !important;
+}
+.text-body-tertiary {
+	color: var(--desaturated-blue) !important;
+}
+
+/* Global Rules */
+body {
+	color: #fff;
+	font-family: Rubik, sans-serif;
+	background-color: var(--very-dark-blue);
+}
+li {
+	transition: color .3s ease;
+	cursor: pointer;
+}
+li:hover,
+li.active {
+	color: #fff;
+}
+
+/* Custom */
+.profile img {
+	width: 64px;
+}
+.box .menu:hover {
+	cursor: pointer;
+	img {
+		filter: grayscale() contrast(10);
+	}
+}
+.box {
+	padding-top: 2.5rem;
+	background-repeat: no-repeat;
+	background-position: 95% 0%;
+}
+.box > div {
+	transition: background .15s ease;
+}
+.box > div:hover {
+	background-color: #34397b;
+	cursor: pointer;
+}
+.box.bg-work {
+	background-image: url('../images/icon-work.svg');
+}
+.box.bg-play {
+	background-image: url('../images/icon-play.svg');
+}
+.box.bg-study {
+	background-image: url('../images/icon-study.svg');
+}
+.box.bg-exercice {
+	background-image: url('../images/icon-exercise.svg');
+}
+.box.bg-social {
+	background-image: url('../images/icon-social.svg');
+}
+.box.bg-selfcare {
+	background-image: url('../images/icon-self-care.svg');
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+	.profile img {
+		width: 80px;
+	}
+	.profile .name {
+		font-size: 2.4rem !important;
+	}
+}
+
+/* My Own Framework */
+.fs-18 {
+	font-size: 18px;
+}
+
+/* Custom Bootstrap */
+@media (min-width: 992px) {
+	.fs-1 {
+		font-size: 3.8rem !important;
+	}
+}

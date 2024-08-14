@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<title>Frontend Mentor | Time tracking dashboard</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<main class="min-vh-100 d-lg-flex align-items-center justify-content-center py-4">
+			<div class="container">
+				<div class="row row-gap-4">
+					<div class="col-lg-4 col-xl-3">
+						<div class="profile h-100 rounded-4 overflow-hidden card-bg">
+							<div class="bg-primary rounded-4 d-lg-block d-flex align-items-center gap-3 p-4 py-lg-5">
+								<img class="border border-3 mb-lg-4 rounded-circle" src="images/image-jeremy.png" alt="Profile Avatar">
+								<div>
+									<div class="text-secondary">Report for</div>
+									<div class="name fs-4 lh-sm fw-light">Jeremy Robson</div>
+								</div>
+							</div>
+							<div>
+								<ul id="time-list" class="list-unstyled fs-18 d-flex justify-content-center justify-content-lg-start flex-lg-column column-gap-5 row-gap-4 mb-0 p-4 text-body-tertiary">
+									<li>Daily</li>
+									<li class="active">Weekly</li>
+									<li>Monthly</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8 col-xl-9">
+						<div class="row row-gap-4 h-100">
+							<div class="col-md-6 col-lg-6 col-xl-4">
+								<div class="box overflow-hidden rounded-4 bg-work h-100">
+									<div class="card-bg p-4 h-100">
+										<div class="d-flex align-items-center justify-content-between mb-2 mb-xl-3">
+											<div class="fs-5 fw-bold">Work</div>
+											<div class="text-end menu"><img src="images/icon-ellipsis.svg" alt="menu btn image"></div>
+										</div>
+										<div class="d-flex d-lg-block justify-content-between">
+											<div class="current fs-1 fw-light lh-1 mb-lg-2">32hrs</div>
+											<div class="text-secondary align-self-end">Last <span class="timeframe">Week</span> - <span class="previous">36hrs</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-xl-4">
+								<div class="box overflow-hidden rounded-4 bg-play h-100">
+									<div class="card-bg p-4 h-100">
+										<div class="d-flex align-items-center justify-content-between mb-2 mb-xl-3">
+											<div class="fs-5 fw-bold">Play</div>
+											<div class="text-end menu"><img src="images/icon-ellipsis.svg" alt="menu btn image"></div>
+										</div>
+										<div class="d-flex d-lg-block justify-content-between">
+											<div class="current fs-1 fw-light lh-1 mb-lg-2">32hrs</div>
+											<div class="text-secondary align-self-end">Last <span class="timeframe">Week</span> - <span class="previous">36hrs</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-xl-4">
+								<div class="box overflow-hidden rounded-4 bg-study h-100">
+									<div class="card-bg p-4 h-100">
+										<div class="d-flex align-items-center justify-content-between mb-2 mb-xl-3">
+											<div class="fs-5 fw-bold">Study</div>
+											<div class="text-end menu"><img src="images/icon-ellipsis.svg" alt="menu btn image"></div>
+										</div>
+										<div class="d-flex d-lg-block justify-content-between">
+											<div class="current fs-1 fw-light lh-1 mb-lg-2">32hrs</div>
+											<div class="text-secondary align-self-end">Last <span class="timeframe">Week</span> - <span class="previous">36hrs</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-xl-4">
+								<div class="box overflow-hidden rounded-4 bg-exercice h-100">
+									<div class="card-bg p-4 h-100">
+										<div class="d-flex align-items-center justify-content-between mb-2 mb-xl-3">
+											<div class="fs-5 fw-bold">Exercice</div>
+											<div class="text-end menu"><img src="images/icon-ellipsis.svg" alt="menu btn image"></div>
+										</div>
+										<div class="d-flex d-lg-block justify-content-between">
+											<div class="current fs-1 fw-light lh-1 mb-lg-2">32hrs</div>
+											<div class="text-secondary align-self-end">Last <span class="timeframe">Week</span> - <span class="previous">36hrs</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-xl-4">
+								<div class="box overflow-hidden rounded-4 bg-social h-100">
+									<div class="card-bg p-4 h-100">
+										<div class="d-flex align-items-center justify-content-between mb-2 mb-xl-3">
+											<div class="fs-5 fw-bold">Social</div>
+											<div class="text-end menu"><img src="images/icon-ellipsis.svg" alt="menu btn image"></div>
+										</div>
+										<div class="d-flex d-lg-block justify-content-between">
+											<div class="current fs-1 fw-light lh-1 mb-lg-2">32hrs</div>
+											<div class="text-secondary align-self-end">Last <span class="timeframe">Week</span> - <span class="previous">36hrs</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-xl-4">
+								<div class="box overflow-hidden rounded-4 bg-selfcare h-100">
+									<div class="card-bg p-4 h-100">
+										<div class="d-flex align-items-center justify-content-between mb-2 mb-xl-3">
+											<div class="fs-5 fw-bold">Self Care</div>
+											<div class="text-end menu"><img src="images/icon-ellipsis.svg" alt="menu btn image"></div>
+										</div>
+										<div class="d-flex justify-content-between d-lg-block">
+											<div class="current fs-1 fw-light lh-1 mb-lg-2">32hrs</div>
+											<div class="text-secondary align-self-end">Last <span class="timeframe">Week</span> - <span class="previous">36hrs</span></div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
